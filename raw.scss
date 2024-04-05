@@ -1,0 +1,520 @@
+.drawer-toggles .drawer-toggler .btn {
+  background-color: #008dc5;
+}
+// BACKGROUND COLORS & IMAGES
+
+  // Background - Global
+  body {
+    background-color: #dcebf0;
+  }
+  #page {
+    height: 100vh;
+    background-image: url(/custom__images/global-background-12.svg);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    // background-repeat: repeat-y;
+  }
+  // Background - Login page
+  body.pagelayout-login #page {
+    background-size: contain!important;
+    background-position: center bottom;
+    .login-container {
+      background-color: #fff;
+    }
+  }
+
+// Homepage Translations => Course visibility
+//HIDE ALL COURSES...
+body#page-site-index .frontpage-course-list-all .coursebox {
+  display: none;
+}  
+
+// Course visibility - "Modules"
+  html:lang(en) {
+      body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="2"] {
+          display: block;
+      }
+  }
+  // html:lang(hr) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+  // html:lang(it) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+  // html:lang(el) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+
+
+// Course visibility - "Forum"
+  html:lang(en) {
+    body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="3"] {
+        display: block;
+    }
+  }
+  // html:lang(hr) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+  // html:lang(it) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+  // html:lang(el) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+
+// Course visibility - "Toolkit"
+  html:lang(en) {
+    body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="4"] {
+        display: block;
+    }
+  }
+  // html:lang(hr) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+  // html:lang(it) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }
+  // html:lang(el) {
+  //     body#page-site-index .frontpage-course-list-all .coursebox[data-courseid="XXX"] {
+  //         display: block;
+  //     }
+  // }    
+
+.h5p-personality-quiz-result h2 {
+  display:none!important;
+} 
+
+// ICONS
+.activityiconcontainer, .activityiconcontainer.other, .activityiconcontainer.content {
+    // affects self-evaluation icon and then scorm files
+    width: 60px;
+    height: 60px;
+    background-color: #0e786a;
+    border-radius: 100%;
+    padding: .8rem!important;
+  }
+
+
+  // ICONS
+    .activity-instance {
+        .courseicon::after {
+            content: "";
+            width: 66px;
+            height: 34px;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }    
+        .modtype_hvp img, .modtype_scorm img, .modtype_resource img {
+            display: none;
+        }
+        .modtype_hvp .courseicon::after {
+           // background-image: url(/custom__images/SediHubplatform_assessment-icon.svg);
+        }
+        .modtype_resource .courseicon::after {
+           // background-image: url(/custom__images/file-pdf-activity.svg);
+        }
+    }
+
+   // SECTION ICON
+  body.course-2  {
+    .course-section-header {
+      height: 66px;
+        .btn.btn-icon {
+            margin-top: 12px;
+        }
+        h3::before {
+          content: "";
+          // background-image: url(/custom__images/section-icon-ADVANCED.svg);
+          width: 70px;
+          height: 80px;
+          margin-right: 0;
+          background-size: contain;
+          background-position: center left;
+          background-repeat: no-repeat;
+        }
+    }
+  }    
+  //course subtitle - sections
+  .course-section-header {
+    background-color: red;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-top: 4px;
+      h3.sectionname {
+        color: #fff!important;
+      }
+    .btn.btn-icon:hover, .btn.btn-icon:focus {
+        background-color: #98dbe9;
+      }
+  }
+  .icons-collapse-expand .expanded-icon {
+    color: white;
+  }
+  // Headings - Headers - Titles
+  .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
+    color: #264676 !important;
+    font-weight: bold !important;
+  }
+  /// H5P
+  .h5p-iframe-wrapper {
+    max-width: 830px;
+    margin: auto;
+  }
+  // QUIZ ACTIVITY
+  // review page 
+  .questionflagsaveform {
+    max-width: 830px;
+    margin: auto;
+  }
+  // Hide differed feedback message on correct-incorrect answers
+  .que .outcome, .que .comment {
+      display: none;
+  }
+  // hide hieghest grade and marks at the top of attempts page
+  .box.py-3.quizinfo {
+    visibility: hidden;
+  }
+  // Hide marks box on the left.
+  .que .info {
+    display: none;
+  }
+  .que .content {
+    margin: 0;
+  }
+  // hide table showing time spent, date etc
+  table.quizreviewsummary {
+    visibility: hidden;
+  }
+  
+  // Bold language li - User Menu
+  #user-action-menu .carousel-navigation-link.dropdown-item {
+      font-weight: bold;
+    }
+    // TEXT Translations
+    .txt-EN, .txt-HR, .txt-IT, .txt-EL {
+        display: none;
+    } 
+    .txt-EN:lang(en), .txt-HR:lang(hr), .txt-IT:lang(it), .txt-EL:lang(el){
+        display: block;
+    }
+    // Increase dropdown language options height and color
+    #usernavigation .carousel-item.submenu{
+        height: auto!important;
+      }
+      .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within {
+        color: #fff !important;
+      }
+      // Hide activity restriction list for certificate
+      .availabilityinfo.isrestricted .description-inner ul {
+        display: none;
+      }
+      // Forum page
+      @media (min-width: 768px) {
+        body#page-mod-forum-view, body#page-mod-forum-discuss {
+          #topofscroll, #page-footer {
+             max-width: 1140px;
+             margin-left: auto;
+             margin-right: auto;
+           }
+        }
+      }
+      // fix weird top-margin inside activity titles
+      header#page-header .page-header-headings h1.h2 {
+        margin-top: 0;
+      }
+      .btn-primary {
+          color: #fff!important;
+      }
+      .btn-primary:hover {
+        color: #ddd !important;
+      }
+      .activitytitle .activityname a,  .activitytitle .activityname span {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      
+      // html block style - "back to modules"
+      .block_html.block {
+        padding-bottom: 18px;
+        text-align: center;
+        background-color: #b3d4d1;
+      }
+      // certificate rules
+      .description-inner {
+        font-size: 16px;
+      }
+      // Course titles
+      #page-course-view-topics .page-header-headings h1.h2 {
+        font-size: 1.6rem;
+      }
+      .list-group-item.active {
+        color: #fff !important;
+        font-weight: bold;
+      }
+      body#page-site-index #topofscroll {
+        padding-top: 0 !important;
+        background-color: transparent;
+      }
+      @media only screen and (max-width: 992px) {
+        body {
+          background-image: none!important;
+        }
+      }
+      //Fix conflict for cards animation.
+      .uk-section {
+        overflow-x: auto;
+        overflow-y: hidden;
+        }
+        .uk-scrollspy-inview {
+        overflow: inherit;
+        }
+        //END FIX
+        
+        body#page-site-index header#page-header {
+          display: none;
+        }
+        .login-identityproviders .login-heading {
+          display: none;
+        }
+        .nav-item[data-key="mycourses"] {
+          display: none;
+        }
+        .navbar-nav {
+          font-weight: bold;
+        }
+        a {
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+        }
+        h3 {
+        margin-top: 0!important;
+        }
+      //   .navbar.bg-white {
+      //     background-color: #B3D4D1 !important;
+      //   }
+        .uk-card-default, .th--background-light-blue {
+          //background-color: #afdef6!important;
+          color: inherit!important;
+        }
+        .uk-box-shadow-medium {
+          border: 1px solid #b7b7b7;
+        }
+        .uk-grid-margin {
+          margin-bottom: 40px!important;
+        }
+        .uk-button {
+          text-transform: none!important;
+        }
+        .uk-border-rounded {
+          border-radius: 15px!important;
+        }
+      
+      footer {
+        //border-radius: .5rem;
+        small, .small {
+            font-size: .775em;
+            font-weight: 400;
+        }
+      }
+        //Fix dissapearing footer
+          @media (min-width: 576px) {
+        .jsenabled #page-footer .footer-content-popover {
+          display: block;
+        }
+        }
+        .footer-support-link, .logininfo, .tool_usertours-resettourcontainer, .footer-section.p-3:nth-child(3) {
+        display: none;
+        }
+        img#erasmusImg {
+          max-width: 180px;
+          display: block;
+          margin: 0 auto 5px auto;
+        }
+        .uk-link, a {
+          color: #008dc5!important;
+        }
+        
+        .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+          color: inherit!important;
+        }
+        .courseindex .courseindex-item.pageitem a {
+          color: #fff!important;
+        }
+    
+        // Homepage styling
+        #page-site-index {
+          #page {
+            // center horizontally and vertically the courses container
+            display: grid;
+            place-items: center;
+          }
+          section#region-main {
+            //background-color: yellow;
+            background-color: transparent;
+          }
+            // FOOTER ON HOMEPAGE
+          #page-footer {
+            position: absolute;
+            bottom: 0;
+          }
+        }        
+        #frontpage-available-course-list {
+          //max-width: 290px;
+          margin: 0 auto;
+          //display: none;
+          h2 {
+            // Hide "Available courses" string
+            display: none;
+          }
+          .courses {
+            // FLEXBOX => Coursebox Container
+              display: flex;
+              //flex-direction: column;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }       
+          // FLEXBOX Item
+          .coursebox {
+            flex-grow: 1;
+            //background-color: black;
+            position: relative;
+            margin: 1rem;
+            padding: 0;
+            border-radius: 0;
+            border: none;
+              &:nth-child(1) .aalink {
+                 background-color: #4999b6;
+              }
+              &:nth-child(2) .aalink {
+                 background-color: #d2c329;
+              }
+              &:nth-child(3) .aalink {
+                 background-color: #264676;
+              }
+              .info {
+                  .coursename {
+                      margin: 0;
+                      padding: 0;
+                  }
+                  .aalink {
+                    text-transform: uppercase;
+                    color: #fff!important;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    //display: block;
+                    width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    //left: 0;
+                    //right: 0;
+                    padding: 1rem 0;
+                    top: 0;
+                      &:hover {
+                        text-decoration: none;
+                      }
+                  }
+                  .moreinfo, .enrolmenticons {
+                    display: none;
+                  }
+                }
+                .content {
+                  .courseimage {
+                    width: 100%;
+                    margin-top: 4rem;
+                      img {
+                        max-width: none;
+                        max-height: none;
+                      }
+                  }
+                  .flex-grow-1 {
+                    // Hide teacher and other info 
+                    display: none;
+                  }                  
+              }
+          } // END COURSEBOXES       
+        }
+        @media (max-width: 600px) {
+          .uk-container-xsmall img {
+              max-width: 280px;
+              display: block;
+              margin: auto;
+            }
+            // Responsive course container to fullwidth
+          #frontpage-available-course-list .courses {
+              display: block;
+          }
+        }
+        // Hide question mark button
+        .btn.btn-icon.bg-secondary.icon-no-margin.btn-footer-popover {
+          display: none;
+        }
+        // Hide Powered by moodle
+        .footer-section.p-3:not(.footer-section.p-3.border-bottom) {
+          display: none;
+        }
+  // Courses page
+  #section-0 {
+    display: none;
+  }
+  #courseindexsection0 {
+    display: none !important;
+  }
+    .description .course-description-item {
+      background-color: #d5d5d5;
+    }
+
+  // FOOTER
+    #page-footer {
+      background-color: #fff !important;
+      max-width: none !important;
+      border-radius: 0!important;
+    }
+    .footer-section.border-bottom {
+      border-bottom: 0 !important;
+      padding: .6rem 0 !important;
+    }
+
+  // UIKIT FIXES 
+  .aalink.focus, a.focus.autolink, .aalink:focus, a.autolink:focus, #page-footer a:not([class]).focus, #page-footer a:not([class]):focus, .arrow_link.focus, .arrow_link:focus, a:not([class]).focus, a:not([class]):focus, .activityinstance > a.focus, .activityinstance > a:focus {
+      //background-color: transparent!important;
+      box-shadow: none!important;
+      outline: transparent!important;
+  }      
+  :focus-visible {
+      outline: transparent!important;
+  }
+
+  // GENERAL FIXES (TEMPORARY)
+
+  .activityiconcontainer .activityicon, .activityiconcontainer .icon {
+    position: absolute;
+  }
+
+  @media (min-width: 768px) {
+    .pagelayout-standard #page.drawers .main-inner, body.limitedwidth #page.drawers .main-inner {
+      max-width: 1010px;
+    }
+  }
